@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/show_plan_priod"
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:textColor="@color/BLACK"
+        android:text="@string/schedule_login_plan_choiceTravelPriod"
+        android:layout_marginBottom="20dp"
+        />
+
+    <com.applikeysolutions.cosmocalendar.view.CalendarView
+        android:id="@+id/calendar_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+
+    <Button
+        android:id="@+id/btn_add_travelPriod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/schedule_plan_add_priod"
+        android:background="@color/colorTextGreen"
+        />
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">NOVATRIP</string>
+
+
+    <!--  담당역할 클래스 설명   -->
+    <!--    멘트-->
+    <string name="schedule_login_guidebook">사용 설명서</string>
+    <string name="schedule_login_join">회원가입</string>
+    <string name="schedule_login_ask">문의하기</string>
+    <string name="schedule_login_checkEnteredInformationFalse">입력한 정보를 다시 확인해주세요. </string>
+    <string name="schedule_login_checkJoinUserFalse">일치하는 정보가 없습니다. 다시 확인해주세요.</string>
+    <string name="schedule_login_plan_enterName">여행 이름을 입력해주세요.</string>
+    <string name="schedule_login_plan_choiceLocal">여행 지역을 선택해주세요.</string>
+    <string name="schedule_login_plan_choiceTravelPriod">기간을 선택해주세요.</string>
+    <string name="schedule_login_plan_choiceTravelLocal">여행 지역을 입력해주세요.</string>
+
+    <!--    버튼 메뉴-->
+    <string name="schedule_plan_title">일정 목록</string>
+    <string name="schedule_plan_add">일정 등록</string>\
+    <string name="schedule_plan_add_priod">등록하기</string>
+
+
+    <!--    탭 메뉴-->
+
+    <string name="tap_pin">여행지</string>
+    <string name="tap_calendar">일정</string>
+    <string name="tap_chat">채팅</string>
+    <string name="tap_subject">번역</string>
+    <string name="tap_user">내 정보</string>
+    <string name="title_activity_test2">test2</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_schedule_navigation_chat">ScheduleNavigationChatActivity</string>
+    <string name="title_activity_schedule_navigation_transfor">ScheduleNavigationTransforActivity
+    </string>
+    <string name="title_activity_schedule_navigation_plan">ScheduleNavigationPlanActivity</string>
+    <string name="title_activity_schedule_navigation_mypage">ScheduleNavigationMypageActivity
+    </string>
+    <string name="title_activity_schedule_navigation_location">ScheduleNavigationLocationActivity
+    </string>
+
+    <!--    타이틀-->
+    <string name="schedule_planName_title">여행 이름</string>
+    <string name="schedule_planLocation_title">여행 지역 선택</string>
+    <string name="schedule_planPriod">여행 기간</string>
+    <string name="title_activity_schedule_travel_detail">ScheduleTravelDetailActivity</string>
+    <string name="title_activity_schedule_olympic_daily_scedule">Map</string>
+
+
+    <!--    올림픽 경기일정-->
+    <string name="schedule_olympicGametime">경기 시간</string>
+    <string name="schedule_olympicGameType">경기 종목</string>
+    <string name="schedule_olympicGameLocation">위치</string>
+    <string name="schedule_olympicBtnChoiceGame">선택</string>
+    <string name="schedule_olympicGamePlan">경기일정</string>
+
+    <!--    test-->
+    <string name="title_section1"> title_section1 </string>
+    <string name="title_section2">title_section2 </string>
+
+
+</resources>

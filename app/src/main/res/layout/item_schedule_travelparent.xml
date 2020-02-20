@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:textColor="@color/BLACK"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Day"
+            android:layout_marginRight="5dp"
+            />
+
+        <TextView
+            android:textColor="@color/BLACK"
+            android:id="@+id/tv_travelDay"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:layout_marginRight="10dp"
+            />
+        <TextView
+            android:id="@+id/tv_travelDate"
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7.15"
+            android:layout_marginRight="5dp"
+            />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recyclerview_TravelChild"
+        />
+
+    <TextView
+        android:id="@+id/tv_addTravelDetailPlan"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="일정 추가"
+        android:textSize="@dimen/design_bottom_text_size"
+        android:paddingVertical="5dp"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/round_gray"
+        android:gravity="center"
+        />
+
+
+</LinearLayout>
