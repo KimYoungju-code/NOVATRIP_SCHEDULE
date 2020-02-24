@@ -1,7 +1,6 @@
 <resources>
     <string name="app_name">NOVATRIP</string>
 
-
     <!--  담당역할 클래스 설명   -->
     <!--    멘트-->
     <string name="schedule_login_guidebook">사용 설명서</string>
@@ -16,12 +15,11 @@
 
     <!--    버튼 메뉴-->
     <string name="schedule_plan_title">일정 목록</string>
-    <string name="schedule_plan_add">일정 등록</string>\
+    <string name="schedule_plan_add">일정 등록</string>
     <string name="schedule_plan_add_priod">등록하기</string>
 
 
     <!--    탭 메뉴-->
-
     <string name="tap_pin">여행지</string>
     <string name="tap_calendar">일정</string>
     <string name="tap_chat">채팅</string>
@@ -31,6 +29,8 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+
+
     <string name="title_activity_schedule_navigation_chat">ScheduleNavigationChatActivity</string>
     <string name="title_activity_schedule_navigation_transfor">ScheduleNavigationTransforActivity
     </string>
@@ -58,6 +58,13 @@
     <!--    test-->
     <string name="title_section1"> title_section1 </string>
     <string name="title_section2">title_section2 </string>
+    <string name="title_activity_schedule_my_page">ScheduleMyPageActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main2">Main2Activity</string>
 
 
 </resources>

@@ -19,16 +19,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SCHEDULE.UI.ScheduleMyPageSecondTap"></activity>
-        <activity android:name=".SCHEDULE.UI.ScheduleMyPageTravelTap" />
-        <activity android:name=".SCHEDULE.UI.ScheduleMyPageActivity" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".SCHEDULE.UI.ScheduleAddPlace"></activity>
+        <activity android:name=".SCHEDULE.UI.SchedulePlaceDetailActivity"></activity>
+        <activity
+            android:name=".SCHEDULE.UI.ScheduleMyPageActivity"
+            android:label="@string/title_activity_schedule_my_page"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".SCHEDULE.UI.ScheduleAddHotelActivity" />
-        <activity android:name=".SCHEDULE.UI.test1" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -44,7 +41,9 @@
         <activity
             android:name=".SCHEDULE.UI.ScheduleOlympicDailyScedule"
             android:label="@string/title_activity_schedule_olympic_daily_scedule" />
-        <activity android:name=".SCHEDULE.UI.ScheduleTravelDetailActivity" />
+        <activity android:name=".SCHEDULE.UI.ScheduleTravelDetailActivity">
+
+        </activity>
         <activity android:name=".SCHEDULE.UI.ScheduleAddLocal" />
         <activity android:name=".SCHEDULE.UI.ScheduleCalender" />
         <activity android:name=".SCHEDULE.UI.ScheduleAddTravel" />
@@ -63,15 +62,15 @@
         <activity
             android:name=".SCHEDULE.UI.ScheduleNavigationChatActivity"
             android:label="@string/title_activity_schedule_navigation_chat" />
-        <activity
-            android:name=".SCHEDULE.UI.test2"
-            android:label="@string/title_activity_test2" />
         <activity android:name=".SCHEDULE.UI.ScheduleLoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity android:name=".SCHEDULE.UI.ScheduleJoinActivity" />
         <activity android:name=".SCHEDULE.UI.ScheduleLoginEmailActivity" />
-        <activity android:name=".SCHEDULE.UI.test" />
     </application>
 
 </manifest>

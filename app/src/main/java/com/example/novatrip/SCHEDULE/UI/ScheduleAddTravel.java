@@ -14,17 +14,14 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.example.novatrip.R;
-import com.example.novatrip.SCHEDULE.Adapter.AdapterSchedulAddLocal;
 import com.example.novatrip.SCHEDULE.Adapter.AdapterSchedulResultLocal;
 import com.example.novatrip.SCHEDULE.Retrofit.RetroBaseApi;
 import com.example.novatrip.SCHEDULE.Retrofit.retrofit;
 import com.example.novatrip.SCHEDULE.Unit.Local;
-import com.example.novatrip.SCHEDULE.Unit.Travel;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 
 import java.util.ArrayList;
-import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.Callback;

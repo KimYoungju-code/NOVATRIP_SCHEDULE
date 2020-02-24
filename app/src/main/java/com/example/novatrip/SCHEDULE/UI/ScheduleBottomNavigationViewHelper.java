@@ -35,7 +35,6 @@ public class ScheduleBottomNavigationViewHelper {
 //                item.setShiftingMode(false);
                 item.setLabelVisibilityMode(LABEL_VISIBILITY_UNLABELED);
 
-
                 // set once again checked value, so view will be updated
                 //noinspection RestrictedApi
                 item.setChecked(item.getItemData().isChecked());

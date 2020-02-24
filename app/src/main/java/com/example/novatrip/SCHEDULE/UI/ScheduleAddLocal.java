@@ -8,35 +8,28 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.os.Parcelable;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
 import android.view.View;
-import android.widget.Adapter;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.novatrip.R;
-import com.example.novatrip.SCHEDULE.Adapter.AdapterSchedulAddLocal;
-import com.example.novatrip.SCHEDULE.Adapter.AdapterSchedulChoiceLocal;
+import com.example.novatrip.SCHEDULE.Adapter.AdapterScheduleAddLocal;
+import com.example.novatrip.SCHEDULE.Adapter.AdapterScheduleChoiceLocal;
 import com.example.novatrip.SCHEDULE.ClickLisener.ClickLisenerSchedulLocalItem;
 import com.example.novatrip.SCHEDULE.Retrofit.RetroBaseApi;
 import com.example.novatrip.SCHEDULE.Retrofit.retrofit;
 import com.example.novatrip.SCHEDULE.Unit.Local;
-import com.example.novatrip.SCHEDULE.Unit.User;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
-import retrofit2.Retrofit;
 
 /**
  * 여행지 선택
@@ -45,8 +38,8 @@ public class ScheduleAddLocal extends AppCompatActivity {
 
 public  String TAG = "ScheduleAddLocal";
     RecyclerView recyclerview_choiceLocal ,recyclerview_localList;
-    AdapterSchedulAddLocal adapterSchedulAddLocal;
-    AdapterSchedulChoiceLocal adapterSchedulChoiceLocal;
+    AdapterScheduleAddLocal adapterScheduleAddLocal;
+    AdapterScheduleChoiceLocal adapterScheduleChoiceLocal;
     Button btn_add_travelPriod;
     RetroBaseApi retroBaseApi;
     TextView input_keyword ;
@@ -91,7 +84,7 @@ public  String TAG = "ScheduleAddLocal";
 
 
         //지역 리사이클러뷰 아이템 클릭시.
-        adapterSchedulAddLocal.ClickListener_clickLisenerSchedulLocalItem(new ClickLisenerSchedulLocalItem() {
+        adapterScheduleAddLocal.ClickListener_clickLisenerSchedulLocalItem(new ClickLisenerSchedulLocalItem() {
             @Override
             public void OnItemClick(Local local, int postision) {
 
@@ -102,8 +95,8 @@ public  String TAG = "ScheduleAddLocal";
 
                 //선택한 아이템을 다시 선택한 지역 리사이클러뷰에 추가.
                 choiceLocalList.add(local);
-                adapterSchedulChoiceLocal.setLocalList(choiceLocalList);
-                adapterSchedulChoiceLocal.notifyItemChanged(choiceLocalList.size());
+                adapterScheduleChoiceLocal.setLocalList(choiceLocalList);
+                adapterScheduleChoiceLocal.notifyItemChanged(choiceLocalList.size());
             }
         });
 
@@ -144,8 +137,8 @@ public  String TAG = "ScheduleAddLocal";
                 }
 
                 editor.apply();
-                adapterSchedulAddLocal.setLocalList(localArrayList);
-                adapterSchedulAddLocal.notifyDataSetChanged();
+                adapterScheduleAddLocal.setLocalList(localArrayList);
+                adapterScheduleAddLocal.notifyDataSetChanged();
             }
 
             @Override
@@ -160,8 +153,8 @@ public  String TAG = "ScheduleAddLocal";
     public void initRecyclerviewLocalList (){
         LinearLayoutManager LayoutManager = new LinearLayoutManager(this);
         recyclerview_localList.setLayoutManager(LayoutManager);
-        adapterSchedulAddLocal = new AdapterSchedulAddLocal(getApplicationContext() );
-        recyclerview_localList.setAdapter(adapterSchedulAddLocal);
+        adapterScheduleAddLocal = new AdapterScheduleAddLocal(getApplicationContext() );
+        recyclerview_localList.setAdapter(adapterScheduleAddLocal);
         LayoutManager.setReverseLayout(true);
         LayoutManager.setStackFromEnd(true);
     }
@@ -172,8 +165,8 @@ public  String TAG = "ScheduleAddLocal";
         @SuppressLint("WrongConstant")
         LinearLayoutManager LayoutManager = new LinearLayoutManager(this, LinearLayout.HORIZONTAL, false);
         recyclerview_choiceLocal.setLayoutManager(LayoutManager);
-        adapterSchedulChoiceLocal = new AdapterSchedulChoiceLocal(getApplicationContext());
-        recyclerview_choiceLocal.setAdapter(adapterSchedulChoiceLocal);
+        adapterScheduleChoiceLocal = new AdapterScheduleChoiceLocal(getApplicationContext());
+        recyclerview_choiceLocal.setAdapter(adapterScheduleChoiceLocal);
         LayoutManager.setReverseLayout(true);
         LayoutManager.setStackFromEnd(true);
 

@@ -112,8 +112,8 @@ public class ScheduleOlympicDailyScedule extends FragmentActivity implements OnM
                 olympicGameArrayList =  adapterSchedulOlympicDailyPlan.getcheckOlympicGameArrayList();
                 //메인 엑티비티로 전달한다.
                 Log.d(TAG, "onClick: "+olympicGameArrayList.size());
-                Intent intent_result = new Intent();
 
+                Intent intent_result = new Intent();
                 intent_result.putParcelableArrayListExtra("olympicGameArrayList",   olympicGameArrayList);
                 intent_result.putExtra("unixTime", unixtime_travel_plan_detail);
                 intent_result.putExtra("position",position);
@@ -139,7 +139,6 @@ public class ScheduleOlympicDailyScedule extends FragmentActivity implements OnM
                     public void onResponse(Call<List<OlympicGame>> call, Response<List<OlympicGame>> response) {
 
                         Log.d(TAG, "onResponse " +response.body().size());
-
 
                         for(int i = 0; i < response.body().size() ; i++){
                             localArrayList.add(i,response.body().get(i));

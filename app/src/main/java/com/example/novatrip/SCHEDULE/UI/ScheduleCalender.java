@@ -125,7 +125,7 @@ public class ScheduleCalender extends AppCompatActivity implements  View.OnClick
                 intent.putExtra("endDay",endDay);
                 startActivity(intent);
 
-                Toast.makeText(ScheduleCalender.this, result, Toast.LENGTH_LONG).show();
+//                Toast.makeText(ScheduleCalender.this, result, Toast.LENGTH_LONG).show();
 
 
             default:

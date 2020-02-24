@@ -48,21 +48,21 @@ public class ScheduleLoginActivity extends AppCompatActivity  implements View.On
         Stetho.initializeWithDefaults(this);
 
         //쉐어드 값 초기화
-        SharedPreferences pref1 =  getSharedPreferences("Login", MODE_PRIVATE);
-        SharedPreferences.Editor editor1 = pref1.edit();
-        editor1.clear();
-        editor1.apply();
+//        SharedPreferences pref1 =  getSharedPreferences("Login", MODE_PRIVATE);
+//        SharedPreferences.Editor editor1 = pref1.edit();
+//        editor1.clear();
+//        editor1.apply();
+//
+//        SharedPreferences pref2 =  getSharedPreferences("login", MODE_PRIVATE);
+//        SharedPreferences.Editor editor2 = pref2.edit();
+//        editor2.clear();
+//        editor2.apply();
 
-        SharedPreferences pref2 =  getSharedPreferences("login", MODE_PRIVATE);
-        SharedPreferences.Editor editor2 = pref2.edit();
-        editor2.clear();
-        editor2.apply();
-
-        SharedPreferences pref3 =  getSharedPreferences("LOCAL", MODE_PRIVATE);
-        SharedPreferences.Editor editor3 = pref3.edit();
-        editor3.clear();
-        editor3.apply();
-
+//        SharedPreferences pref3 =  getSharedPreferences("LOCAL", MODE_PRIVATE);
+//        SharedPreferences.Editor editor3 = pref3.edit();
+//        editor3.clear();
+//        editor3.apply();
+//
 
         //초기화
         textinput_id = findViewById(R.id.textinput_id);

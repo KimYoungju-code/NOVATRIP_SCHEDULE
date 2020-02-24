@@ -8,15 +8,27 @@
     android:orientation="vertical"
 
     >
-
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
     <ImageView
         android:layout_marginTop="10dp"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:src="@drawable/back"
         />
-
-
+    <ImageView
+        android:layout_gravity="right|center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_person_add_black_24dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</FrameLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_marginHorizontal="10dp"
@@ -44,14 +56,33 @@
 
             />
 
-        <ImageView
+        <TextView
+            android:id="@+id/tv_editTravelPlan"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@drawable/round_gray"
+            android:paddingHorizontal="7dp"
+            android:paddingVertical="5dp"
             android:src="@drawable/ic_person_add_black_24dp"
-            android:layout_marginRight="20dp"
+            android:text="편집"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/tv_saveTravelPlan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_gray"
+            android:paddingHorizontal="7dp"
+            android:paddingVertical="5dp"
+            android:src="@drawable/ic_person_add_black_24dp"
+            android:text="저장"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 

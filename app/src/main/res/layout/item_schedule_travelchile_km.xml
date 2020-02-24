@@ -9,6 +9,7 @@
     android:gravity="center"
     android:background="@drawable/round_gray"
     android:layout_marginHorizontal="10dp"
+
     >
     <TextView
         android:textSize="17dp"

@@ -11,12 +11,29 @@ public class OlympicGame implements Parcelable {
     /**
      * OLYMPIC + OLYMPIC_DETAIL table 합친 정보
      * 올림픽 경기에 대한 모든 내용
-     * **/
+     **/
 
     //OLYMPIC table
-
-    private int idx_olympic; //OLYMPIC_DETAIL table에idx (테이블 join 기준)
+    private int idx_olympic; /**OLYMPIC table에idx (테이블 join 기준)***/
     private int  categorey_olympic;
+
+    private Date date_olympic;
+    private String start_time_olympic; // 원래는 Time type인데.. 서버에서 받아올 때 09:00:00값을 인식할 수 없어서 일단 string type으로 받음.
+    private String end_time_olympic; // 원래는 Time type인데.. 서버에서 받아올 때 09:00:00값을 인식할 수 없어서 일단 string type으로 받음.
+    private Double lon_olympic_stadium;
+    private Double lat_olympic_stadium;
+
+    //OLYMPIC_DETAIL table
+
+    private int idx_olympic_detail;
+    private String address_olympic_stadium;
+    private String name_olympic_stadium;
+    private String name_olympic_game;
+    private String info_olympic_game;
+    private String info_olympic_game_event;
+
+//TODO:올림픽 게임 정보중에 이미지 URL도 추가해야함.
+
 
     public void setIdx_olympic(int idx_olympic) {
         this.idx_olympic = idx_olympic;
@@ -69,21 +86,6 @@ public class OlympicGame implements Parcelable {
     public void setInfo_olympic_game_event(String info_olympic_game_event) {
         this.info_olympic_game_event = info_olympic_game_event;
     }
-
-    private Date date_olympic;
-    private String start_time_olympic; // 원래는 Time type인데.. 서버에서 받아올 때 09:00:00값을 인식할 수 없어서 일단 string type으로 받음.
-    private String end_time_olympic; // 원래는 Time type인데.. 서버에서 받아올 때 09:00:00값을 인식할 수 없어서 일단 string type으로 받음.
-    private Double lon_olympic_stadium;
-    private Double lat_olympic_stadium;
-
-    //OLYMPIC_DETAIL table
-
-    private int idx_olympic_detail;
-    private String address_olympic_stadium;
-    private String name_olympic_stadium;
-    private String name_olympic_game;
-    private String info_olympic_game;
-    private String info_olympic_game_event;
 
 
 

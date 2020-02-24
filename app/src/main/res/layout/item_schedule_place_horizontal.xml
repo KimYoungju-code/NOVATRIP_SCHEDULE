@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="180dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/edit_box">
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:src="@drawable/dotonbori"
+        android:id="@+id/thumbnail"
+        android:layout_width="match_parent"
+        android:layout_height="120dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/top_n"
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:paddingTop="8dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="16dp"
+            tools:text="TOP 1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/heart"
+            android:paddingTop="8dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="8dp"
+            android:src="@drawable/ic_heart_blanked"
+            android:layout_width="50dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/title"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:paddingTop="8dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="16dp"
+        tools:text="도쿄"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
